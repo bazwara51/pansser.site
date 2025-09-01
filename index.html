@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panca Tunggal Security Service</title>
+  <style>
+    body {margin:0;font-family:Arial, sans-serif;background:#f4f4f4;color:#333;scroll-behavior:smooth;}
+    header {background:#001f54;color:#fff;padding:15px 30px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;}
+    header img {height:70px;transition:transform 0.3s;} header img:hover{transform:scale(1.1);}
+    nav a {color:#fff;margin:0 15px;text-decoration:none;font-weight:bold;position:relative;}
+    nav a::after {content:'';position:absolute;width:0;height:2px;background:#ffd700;left:0;bottom:-5px;transition:0.3s;}
+    nav a:hover::after {width:100%;}
+    .hero {background:url('logo panca.png') no-repeat center center/contain;background-color:#000;color:#fff;text-align:center;padding:100px 20px;}
+    .hero h1 {font-size:2.5em;margin-bottom:10px;}
+    section {padding:60px 20px;max-width:1000px;margin:auto;}
+    .services {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+    .service-box {background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);text-align:center;transition:0.3s;}
+    .service-box:hover {transform:translateY(-5px);box-shadow:0 8px 12px rgba(0,0,0,0.2);}
+    form {background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);display:flex;flex-direction:column;gap:15px;max-width:500px;margin:auto;}
+    form input,form textarea{padding:10px;border:1px solid #ccc;border-radius:5px;font-size:1em;}
+    form button{background:#001f54;color:#fff;border:none;padding:12px;border-radius:5px;cursor:pointer;font-size:1em;transition:background 0.3s;}
+    form button:hover{background:#003d99;}
+    .whatsapp-btn{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:15px 20px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 4px 6px rgba(0,0,0,0.2);transition:transform 0.3s;}
+    .whatsapp-btn:hover{transform:scale(1.1);}
+    footer{background:#001f54;color:#fff;text-align:center;padding:20px;margin-top:40px;}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo panca.png" alt="Logo Panca Tunggal">
+    <nav>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Panca Tunggal Security Service</h1>
+    <p>Akusara Saka Sasanakreta</p>
+  </div>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Panca Tunggal Security Service adalah perusahaan jasa keamanan yang berkomitmen memberikan perlindungan terbaik dengan profesionalisme dan integritas. Dengan tenaga keamanan terlatih, kami siap menjaga keamanan aset, properti, maupun pribadi Anda.</p>
+  </section>
+
+  <section id="layanan">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div class="service-box"><h3>Security Service</h3><p>Menjaga keamanan lingkungan, gedung, dan acara.</p></div>
+      <div class="service-box"><h3>Bodyguard</h3><p>Perlindungan pribadi oleh tenaga ahli dan berpengalaman.</p></div>
+      <div class="service-box"><h3>Patroli</h3><p>Layanan patroli keamanan untuk area tertentu sesuai kebutuhan.</p></div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <form action="https://formsubmit.co/pancatunggalpakuan51@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://yourdomain.com/terimakasih.html">
+      <input type="text" name="nama" placeholder="Nama Lengkap" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="pesan" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <a href="https://wa.me/6281234567890" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
+
+  <footer>
+    <p>&copy; 2025 Panca Tunggal Security Service. All rights reserved.</p>
+  </footer>
+</body>
+</html>
